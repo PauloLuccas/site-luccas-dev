@@ -51,7 +51,7 @@ const Home: NextPage = () => {
           </div>
         </section>
         <section className='contentRight'>
-          <h4>Principal</h4>
+          <h4>About</h4>
         </section>
       </div>
     </>
