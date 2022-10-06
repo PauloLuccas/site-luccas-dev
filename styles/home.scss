@@ -4,6 +4,7 @@
     font-family: 'Montserrat', sans-serif;
     padding: 0;
     background-color: #0E0E11;
+    overflow: hidden;
 
     .contentLeft {
         width: 350px;
@@ -12,8 +13,10 @@
         align-items: center;
         z-index: 12;
         padding: 0 100px;
-        background-color: #494b50;
+        // background-color: #494b50;
         color: #fff;
+        background-color: rgba(255, 255, 255, 0.17);
+        border: 1px solid rgba(255, 255, 255, 0.1);
 
         .logo {
             a {
@@ -69,6 +72,7 @@
     }
 
     .contentRight {
+        position: relative;
         width: 100%;
         height: 100vh;
         display: flex;
@@ -148,6 +152,74 @@
                         }
                     }
                 }
+            }
+        }
+
+        .ellipse_24 {
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            left: -200px;
+            top: 25px;
+            border-radius: 60%;
+
+            background-color: #971456;
+            opacity: 0.5;
+            filter: blur(338.5px);
+            animation: movit1 8s ease-in-out infinite 1s;
+        }
+
+        .ellipse_25 {
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            left: 1000px;
+            top: 25px;
+            border-radius: 60%;
+
+            background-color: #1C55A3;
+            opacity: 0.6;
+            filter: blur(338.5px);
+            animation: movit2 8s ease-in-out infinite 1s;
+        }
+
+        @keyframes movit1 {
+            0% {
+                border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+                left: -200px;
+                top: 25px;
+            }
+        
+            50% {
+                border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+                left: 0px;
+                top: -25px;
+            }
+        
+            100% {
+                border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+                left: -400px;
+                top: 25px;
+            }
+        }
+
+        @keyframes movit2 {
+            0% {
+                border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+                left: 1000px;
+                top: 25px;
+            }
+        
+            50% {
+                border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+                left: 800px;
+                top: -25px;
+            }
+        
+            100% {
+                border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+                left: 1000px;
+                top: 25px;
             }
         }
     }

@@ -71,6 +71,9 @@ const Home: NextPage = () => {
               </div>
             </div>
           </div>
+
+          <div className="ellipse_24"></div>
+          <div className="ellipse_25"></div>
         </section>
       </div>
     </>
