@@ -53,6 +53,9 @@ const Home: NextPage = () => {
         <section className='contentRight'>
           <h4>Porfólio</h4>
         </section>
+
+        <div className="ellipse_24"></div>
+        <div className="ellipse_25"></div>
       </div>
     </>
     
