@@ -52,10 +52,10 @@ const Home: NextPage = () => {
         </section>
         <section className='contentRight'>
           <h4>Contact</h4>
-        </section>
 
-        <div className="ellipse_24"></div>
-        <div className="ellipse_25"></div>
+          <div className="ellipse_24"></div>
+          <div className="ellipse_25"></div>
+        </section>
       </div>
     </>
     
