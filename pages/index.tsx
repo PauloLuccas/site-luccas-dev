@@ -1,7 +1,9 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Link from 'next/link'
+import Image from 'next/image'
 import { useRouter } from "next/router"
+import MyPhoto from '../assets/images/minha_foto.jpg';
 
 const Home: NextPage = () => {
 
@@ -51,7 +53,24 @@ const Home: NextPage = () => {
           </div>
         </section>
         <section className='contentRight'>
-          <h4>Principal</h4>
+          <div className="container">
+            <div className="home">
+              <div className="home_content">
+                <div className="left">
+                  <Image
+                    src={MyPhoto}
+                    alt="Minha foto"
+                    width={250}
+                    height={250}
+                  />
+                </div>
+                <div className="right">
+                  <h2 className='nome'>Paulo Luccas</h2>
+                  <p>Desenvolvedor Full-stack</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
       </div>
     </>
